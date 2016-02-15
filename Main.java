@@ -3,12 +3,13 @@ package org.max.concurrent;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * foofoo
- * barbar
+ * foo
+ * bar
  */
 public class Main implements Runnable {
   private volatile int x = 0;
   // private AtomicInteger y = new AtomicInteger();
+  // new line
   // new line
 
   public static void main(String[] args) throws InterruptedException {
@@ -22,16 +23,15 @@ public class Main implements Runnable {
   }
 
   @Override
-  public void run() {   // comment
-    //
-    //
+  public void run() {   // edit
     //
     // System.out.println("in");
     for (int i = 0; i < 100000; i++) {
       // y.incrementAndGet();
       x++;
     }
-    // System.out.println("out");
   }
+
+  int value; // new line
 }
 
