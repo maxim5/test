@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class KeyTest extends Activity implements OnKeyListener {
     StringBuilder builder = new StringBuilder();
     TextView textView;
+    int code;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,7 @@ public class KeyTest extends Activity implements OnKeyListener {
         textView.setFocusableInTouchMode(true);
         textView.requestFocus();
         setContentView(textView);
+        code = 0;
     }
 
     @Override

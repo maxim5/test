@@ -24,18 +24,18 @@ public class SingleTouchTest extends Activity implements OnTouchListener {
     public boolean onTouch(View v, MotionEvent event) {
         builder.setLength(0);
         switch (event.getAction()) {
-        case MotionEvent.ACTION_DOWN:
-            builder.append("down, ");
-            break;
-        case MotionEvent.ACTION_MOVE:
-            builder.append("move, ");
-            break;
-        case MotionEvent.ACTION_CANCEL:
-            builder.append("cancle, ");
-            break;
-        case MotionEvent.ACTION_UP:
-            builder.append("up, ");
-            break;
+          case MotionEvent.ACTION_DOWN:
+              builder.append("down, ");
+              break;
+          case MotionEvent.ACTION_MOVE:
+              builder.append("move, ");
+              break;
+          case MotionEvent.ACTION_CANCEL:
+              builder.append("cancle, ");
+              break;
+          case MotionEvent.ACTION_UP:
+              builder.append("up, ");
+              break;
         }
         builder.append(event.getX());
         builder.append(", ");
