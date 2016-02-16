@@ -15,8 +15,9 @@ public class AndroidBasicsStarter extends ListActivity {
             "FullScreenTest", "WakeLockTest", "RenderViewTest", "ShapeTest", "BitmapTest",
             "FontTest", "SurfaceViewTest" };
 
+    // More comments
+    // More comments
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tests));
     }
 
@@ -30,7 +31,6 @@ public class AndroidBasicsStarter extends ListActivity {
             Intent intent = new Intent(this, clazz);
             startActivity(intent);
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         }
     }
 }
