@@ -25,12 +25,6 @@ public class AssetsTest extends Activity {
         } catch (IOException e) {
             textView.setText("Couldn't load file");
         } finally {
-            if (inputStream != null)
-                try {
-                    inputStream.close();
-                } catch (IOException e) {
-                    textView.setText("Couldn't close file");
-                }
         }
     }
 
