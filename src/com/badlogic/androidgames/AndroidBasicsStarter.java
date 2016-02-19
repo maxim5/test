@@ -10,8 +10,6 @@ import android.widget.ListView;
 // Comments
 public class AndroidBasicsStarter extends ListActivity {
     String tests[] = { "LifeCycleTest", "SingleTouchTest", "MultiTouchTest",
-            "KeyTest", "AccelerometerTest", "AssetsTest",
-            "ExternalStorageTest", "SoundPoolTest", "MediaPlayerTest",
             "FullScreenTest", "WakeLockTest", "RenderViewTest", "ShapeTest", "BitmapTest",
             "FontTest", "SurfaceViewTest" };
 
@@ -21,8 +19,7 @@ public class AndroidBasicsStarter extends ListActivity {
         setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tests));
     }
 
-    @Override
-    protected void onListItemClick(ListView list, View view, int position, long id) {
+    protected void onListItemClick(@NotNull ListView list, View view, int position, long id) {
         super.onListItemClick(list, view, position, id);
         String testName = tests[position];
         try {
@@ -31,6 +28,8 @@ public class AndroidBasicsStarter extends ListActivity {
             Intent intent = new Intent(this, clazz);
             startActivity(intent);
         } catch (ClassNotFoundException e) {
+        } catch (Throwable e) {
         }
     }
 }
+
