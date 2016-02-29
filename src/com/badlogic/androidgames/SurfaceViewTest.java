@@ -9,8 +9,10 @@ import android.view.SurfaceView;
 import android.view.Window;
 import android.view.WindowManager;
 
+// Comments
+// Comments
 public class SurfaceViewTest extends Activity {      
-    FastRenderView renderView;            
+    private FastRenderView renderView;            
         
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
