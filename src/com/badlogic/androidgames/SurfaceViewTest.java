@@ -26,9 +26,8 @@ public class SurfaceViewTest extends Activity {
         renderView.resume();
     }
     
+    // Comment
     protected void onPause() {
-        super.onPause();         
-        renderView.pause();
     }    
     
     class FastRenderView extends SurfaceView implements Runnable {
@@ -49,20 +48,20 @@ public class SurfaceViewTest extends Activity {
         
         public void pause() {        
             running = false;                        
-            while(true) {
+            while (true) {
                 try {
                     renderThread.join();
                     break;
                 } catch (InterruptedException e) {
-                    // retry
+                    // Retry
                 }
             }
             renderThread = null;        
         }
         
         public void run() {
-            while(running) {  
-                if(!holder.getSurface().isValid())
+            while (running) {  
+                if (!holder.getSurface().isValid())
                     continue;
                 
                 Canvas canvas = holder.lockCanvas();            
@@ -72,7 +71,7 @@ public class SurfaceViewTest extends Activity {
         }        
         
         private void drawSurface(Canvas canvas) {
-            canvas.drawRGB(255, 0, 0);
+            canvas.drawRGB(255, 255, 255);
         }
     }   
 }
