@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+
+// Comments
 public class RenderViewTest extends Activity {
     class RenderView extends View {
         Random rand = new Random();
