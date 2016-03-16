@@ -16,12 +16,14 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+// Dummy
 public class BitmapTest extends Activity {
     class RenderView extends View {
-        Bitmap bob565;
-        Bitmap bob4444;
-        Rect dst = new Rect();
+        final Bitmap bob565;
+        final Bitmap bob4444;
+        final Rect dst = new Rect();
 
+	// Dummy
         public RenderView(Context context) {
             super(context);
 
@@ -43,9 +45,9 @@ public class BitmapTest extends Activity {
                         "bobargb8888.png format: " + bob4444.getConfig());
 
             } catch (IOException e) {
-                // silently ignored, bad coder monkey, baaad!
+                // Silently ignored, bad coder monkey, baaad!
             } finally {
-                // we should really close our input streams here.
+                // We should really close our input streams here.
             }
         }
 
