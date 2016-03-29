@@ -9,8 +9,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Main implements Runnable {
   private volatile int x = 0;
   // private AtomicInteger y = new AtomicInteger();
-  // new line
-  // new line
 
   public static void main(String[] args) throws InterruptedException {
     Main main = new Main();
@@ -21,6 +19,12 @@ public class Main implements Runnable {
     // System.out.println(main.y.get());
     System.out.println(main.x);
   }
+
+//
+//
+//
+//
+//
 
   @Override
   public void run() {   // edit
