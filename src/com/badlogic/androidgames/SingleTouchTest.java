@@ -8,9 +8,10 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.TextView;
 
+// Test
 public class SingleTouchTest extends Activity implements OnTouchListener {
-    StringBuilder builder = new StringBuilder();
-    TextView textView;
+    private StringBuilder builder = new StringBuilder();
+    private TextView textView;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
