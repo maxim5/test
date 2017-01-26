@@ -7,14 +7,11 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-// Comments
 public class AndroidBasicsStarter extends ListActivity {
     String tests[] = { "LifeCycleTest", "SingleTouchTest", "MultiTouchTest",
             "FullScreenTest", "WakeLockTest", "RenderViewTest", "ShapeTest", "BitmapTest",
             "FontTest", "SurfaceViewTest" };
 
-    // More comments
-    // More comments
     public void onCreate(Bundle savedInstanceState) {
         setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tests));
     }
