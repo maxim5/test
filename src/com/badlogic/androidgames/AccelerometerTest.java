@@ -46,6 +46,5 @@ public class AccelerometerTest extends Activity implements SensorEventListener {
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
-        // nothing to do here
     }
 }
