@@ -9,6 +9,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.widget.TextView;
 
+// Non-conflict comment
 public class AccelerometerTest extends Activity implements SensorEventListener {
     TextView textView;
     StringBuilder builder = new StringBuilder();
@@ -17,7 +18,7 @@ public class AccelerometerTest extends Activity implements SensorEventListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         textView = new TextView(this);
-        setContentView(textView);
+        setContentView(textView);  // non-conflict comment
 
         SensorManager manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (manager.getSensorList(Sensor.TYPE_ACCELEROMETER).size() == 0) {
