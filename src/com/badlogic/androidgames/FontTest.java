@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-// Comment
+// Comment ++
 public class FontTest extends Activity {
     class RenderView extends View {
         Paint paint;
@@ -30,16 +30,14 @@ public class FontTest extends Activity {
             paint.setTypeface(font);
             paint.setTextSize(28);
             paint.setTextAlign(Paint.Align.CENTER);
-            canvas.drawText("This is a test!", canvas.getWidth() / 2, 100,
-                    paint);
+            canvas.drawText("This is a test!", canvas.getWidth() / 2, 100, paint);
 
             String text = "This is another test o_O";
             paint.setColor(Color.WHITE);
             paint.setTextSize(18);
             paint.setTextAlign(Paint.Align.LEFT);
             paint.getTextBounds(text, 0, text.length(), bounds);
-            canvas.drawText(text, canvas.getWidth() - bounds.width(), 140,
-                    paint);
+            canvas.drawText(text, canvas.getWidth() - bounds.width(), 140, paint);
             invalidate();
         }
     }
