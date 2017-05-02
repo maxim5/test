@@ -32,8 +32,7 @@ public class BitmapTest extends Activity {
                 InputStream inputStream = assetManager.open("bobrgb888.png");
                 bob565 = BitmapFactory.decodeStream(inputStream);
                 inputStream.close();
-                Log.d("BitmapText",
-                        "bobrgb888.png format: " + bob565.getConfig());
+                Log.d("BitmapText", "bobrgb888.png format: " + bob565.getConfig());
 
                 inputStream = assetManager.open("bobargb8888.png");
                 BitmapFactory.Options options = new BitmapFactory.Options();
@@ -41,8 +40,7 @@ public class BitmapTest extends Activity {
                 bob4444 = BitmapFactory
                         .decodeStream(inputStream, null, options);
                 inputStream.close();
-                Log.d("BitmapText",
-                        "bobargb8888.png format: " + bob4444.getConfig());
+                Log.d("BitmapText", "bobargb8888.png format: " + bob4444.getConfig());
 
             } catch (IOException e) {
                 // Silently ignored, bad coder monkey, baaad!
@@ -63,8 +61,7 @@ public class BitmapTest extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(new RenderView(this));
     }
 }
