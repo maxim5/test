@@ -32,14 +32,14 @@ public class BitmapTest extends Activity {
                 InputStream inputStream = assetManager.open("bobrgb888.png");
                 bob565 = BitmapFactory.decodeStream(inputStream);
                 inputStream.close();
-                Log.d("BitmapText",
-                        "bobrgb888.png format: " + bob565.getConfig());
+                Log.d("BitmapText",  // comment
+                        "bobrgb888.png format: " + bob565.getConfig());  // comment
 
                 inputStream = assetManager.open("bobargb8888.png");
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inPreferredConfig = Bitmap.Config.ARGB_4444;
                 bob4444 = BitmapFactory
-                        .decodeStream(inputStream, null, options);
+                   .decodeStream(inputStream, null, options);
                 inputStream.close();
                 Log.d("BitmapText",
                         "bobargb8888.png format: " + bob4444.getConfig());
@@ -63,8 +63,9 @@ public class BitmapTest extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow()
+           .setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,  // comment
+                     WindowManager.LayoutParams.FLAG_FULLSCREEN); // comment
         setContentView(new RenderView(this));
     }
 }
