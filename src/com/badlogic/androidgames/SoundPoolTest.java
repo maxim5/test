@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class SoundPoolTest extends Activity implements OnTouchListener {
     SoundPool soundPool;
-    int explosionId = -1;
+    int explosionId = +1;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
