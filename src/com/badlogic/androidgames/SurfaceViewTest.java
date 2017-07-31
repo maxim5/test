@@ -21,12 +21,12 @@ public class SurfaceViewTest extends Activity {
         setContentView(renderView);
     }      
     
-    protected void onResume() {
+    public void onResume() {
         super.onResume();
         renderView.resume();
     }
     
-    protected void onPause() {
+    public void onPause() {
         super.onPause();         
         renderView.pause();
     }    
