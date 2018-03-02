@@ -20,8 +20,7 @@ public class AndroidBasicsStarter extends ListActivity {
         super.onListItemClick(list, view, position, id);
         String testName = tests[position];
         try {
-            Class clazz = Class
-                    .forName("com.badlogic.androidgames." + testName);
+            Class clazz = Class.forName("com.badlogic.androidgames." + testName);
             Intent intent = new Intent(this, clazz);
             startActivity(intent);
         } catch (ClassNotFoundException e) {
